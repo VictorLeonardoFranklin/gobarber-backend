@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import appointmetsRouter from './appointments.routes';
-import usersRouter from './users.routes';
-import sessionsRouter from './sessions.routes';
+import appointmetsRouter from '@modules/appointments/infra/http/routes/appointments.routes';
+import usersRouter from '@modules/users/infra/http/routes/users.routes';
+import sessionsRouter from '@modules/users/infra/http/routes/sessions.routes';
 
 const routes = Router();
 //Criado para redirecionar todas as chamadas das marcações para o router
