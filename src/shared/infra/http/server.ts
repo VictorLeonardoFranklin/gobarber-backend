@@ -16,7 +16,7 @@ app.use(express.json());
 
 //Disponibilizo uma rota para visualização dos arquivos
 //staticos da aplicação no caso as imagens do avatar
-app.use('/files', express.static(uploadConfig.directory));
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 
 app.use(routes);
 
